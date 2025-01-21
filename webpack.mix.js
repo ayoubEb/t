@@ -21,4 +21,3 @@ mix.js('resources/js/app.js', 'public/js')
 .sass('resources/sass/login.scss', 'public/css')
 .sass('resources/sass/basic.scss', 'public/css')
 .sourceMaps();
-mix.browserSync('127.0.0.1:8000');

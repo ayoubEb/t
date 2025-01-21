@@ -1,3 +1,51 @@
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+header .logo {
+  width: 50%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+header .logo img {
+  width: 250px !important;
+}
+header p {
+  padding: 0;
+  font-size: 13px;
+}
+header p span {
+  margin: 0;
+}
+
+hr {
+  margin: 10px 0;
+  background-color: black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  left: 0%;
+  width: 100%;
+}
+footer .fw-bold {
+  font-weight: bolder;
+}
+footer p {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 18px;
+}
+footer p span {
+  margin: 0;
+}
+
 * {
   margin: 1%;
   padding: 0;

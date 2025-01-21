@@ -8,14 +8,7 @@
   <title>liste des ventes : {{ $mois }}</title>
 </head>
 <body>
-  <header class="headerRapport">
-    <h4>
-      liste des ventes : {{ $mois }}
-    </h4>
-    <h6>
-      num : {{ $ligneRapport->num }}
-    </h6>
-  </header>
+@include('layouts.heading_doc')
   <article>
       <table>
         <thead>
@@ -52,7 +45,6 @@
           <th>montant</th>
           <th>payer</th>
           <th>reste</th>
-          <th>status</th>
         </tr>
       </thead>
       <tbody>
@@ -66,15 +58,6 @@
               <td> {{ number_format($rapport->montant , 2 , "," , " ")." dhs" }} </td>
               <td> {{ number_format($rapport->payer , 2 , "," , " ")." dhs" }} </td>
               <td> {{ number_format($rapport->reste , 2 , "," , " ")." dhs" }} </td>
-              <td>
-                @if ($rapport->status == "en cours")
-                  <span class="text-bleu"> en cours </span>
-                @elseif ($rapport->status == "validé")
-                  <span class="text-vert"> validé </span>
-                @else
-                  <span class="text-red"> annuler </span>
-                @endif
-              </td>
             </tr>
           @endforeach
         </tr>
@@ -82,6 +65,9 @@
     </table>
   </article>
 
+  @if ($entreprise != null)
+    @include('layouts.footerDoc',["id"=>$entreprise->id])
+  @endif
 
 </body>
 </html>

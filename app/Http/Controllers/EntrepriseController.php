@@ -93,6 +93,7 @@ class EntrepriseController extends Controller
         "patente"        => request("patente"),
         "fix"            => request("fix"),
         "description"    => request("description"),
+        "check_document" => request("check_document") == null || request("check_document") == 0 ? 0 : 1,
     ]);
     toast("L'enregistrement d'entreprise effectuée","success");
     return redirect()->route('entreprise.index');
@@ -169,12 +170,12 @@ class EntrepriseController extends Controller
       "code_postal"    => ["regex:/^([0-9]){1,5}$/","required"],
       "email"          => ["required"],
     ]);
-    if (File::exists(storage_path().'/app/public/images/entreprises/'.$entreprise->logo)) {
-      File::delete(storage_path().'/app/public/images/entreprises/'.$entreprise->logo);
-    }
 
     if($request->hasFile("logo"))
     {
+      if (File::exists(storage_path().'/app/public/images/entreprises/'.$entreprise->logo)) {
+        File::delete(storage_path().'/app/public/images/entreprises/'.$entreprise->logo);
+      }
       $destination_path_produit = 'public/images/entreprises/';
       $logo                     = $request->file("logo");
       $logo_en                  = $logo->getClientOriginalName();
@@ -195,7 +196,8 @@ class EntrepriseController extends Controller
       "telephone"      => request("telephone"),
       "patente"        => request("patente"),
       "fix"            => request("fix"),
-      "description"    => request("description")
+      "description"    => request("description"),
+      "check_document" => request("check_document") == null || request("check_document") == 0 ? 0 : 1,
     ]);
     toast("La motification d'entreprise effectuée","success");
     return redirect()->route("entreprise.index");

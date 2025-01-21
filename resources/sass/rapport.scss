@@ -1,42 +1,77 @@
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 @import 'variables';
-@import 'all_doc.scss';
+@import 'top_document.scss';
+@import 'bottom_document.scss';
 
 
 
 
-// .infoResume{
-//   margin: 0 0 10px 0;
-//   tbody{
-//     tr td:first-child(){
-//       background-color: rgba($color: $color-bleu, $alpha: .1);
-//       border-right: 1px solid $color-bleu-50;
-//     }
-//   }
-// }
-// .headerRapport{
-//   margin: 0 0 10px 0;
-//   h5{
-//     width         : 50%;
-//     padding-top   : 10px;
-//     padding-bottom: 10px;
-//     text-align    : center;
-//     // border-radius : .375rem;
-//     font-size: x-small;
-//     text-transform: uppercase;
-//     margin: auto;
-//   }
-//   // h4{
-//   //   float         : left;
-//   //   background    : $color-vert-50;
-//   // }
-//   // h6{
-//   //   float: right;
-//   //   background    : $color-vert;
-//   //   color: white;
+*{
+  margin: 1%;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: .5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+  margin: 0 0 10px 0;
+  h5{
+    color         : $color-bleu;
+    text-transform: uppercase;
+    width: 40%;
+    font-size     : 12px;
+    text-align    : center;
+    // border-top    : 2px solid $color-bleu;
+    border-bottom : 2px solid $color-bleu;
+    padding-bottom: 5px;
+    margin: auto;
+  }
+}
+table
+{
+  width          : 100%;
+  border-collapse: collapse;
+  margin: 0;
 
-//   // }
-// }
+
+  th{
+    background-color: $color-bleu-50;
+    text-align: left;
+    color: white;
+
+  }
+  th,td{
+    padding-left: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+
+  }
+
+  tr{
+    border: .4px $color-bleu solid;
+  }
+}
+
+article{
+  clear: both;
+  margin: 0;
+}
+
+.sub-title
+{
+  // text-align    : center;
+  text-transform: uppercase;
+  font-weight   : bold;
+  letter-spacing: .8px;
+  font-size     : 13px;
+  margin: 18px 0px 9px 0px;
+
+}
+
+
+
+
+
 .cmd,.paiements,.statistiques{
   margin: 0;
   clear: both;

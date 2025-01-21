@@ -21,7 +21,7 @@ class StockSeeder extends Seeder
     public function run()
     {
 
-      for($i = 1 ; $i <= 3 ; $i++){
+      for($i = 1 ; $i <= 2 ; $i++){
         Stock::create([
           "produit_id" => $i,
           "num"        => "STO00-".$i,
@@ -38,7 +38,7 @@ class StockSeeder extends Seeder
           "quantite"=>100,
           "date_mouvement"=>Carbon::today(),
         ]);
-     
+
       }
 
     }

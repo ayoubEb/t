@@ -22,7 +22,7 @@ Ajouter une entreprise
             <input type="file" name="logo" id="" class="form-control">
           </div>
         </div>
-        
+
         <div class="col mb-2">
           <div class="form-group">
             <label for="" class="form-label">Raison Sociale <span class="text-danger"> * </span></label>
@@ -147,6 +147,17 @@ Ajouter une entreprise
             @error('code_postal')
               <strong class="invalid-feedback">{{ $message }}</strong>
             @enderror
+          </div>
+        </div>
+
+        <div class="col mb-2">
+          <div class="form-group">
+            <label for="" class="form-label">Document<span class="text-danger"> * </span></label>
+            <select name="check_document" id="" class="form-select">
+              <option value="">-- Sélectionner --</option>
+              <option value="1">Active</option>
+              <option value="0">Inactive</option>
+            </select>
           </div>
         </div>
 

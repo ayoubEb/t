@@ -123,8 +123,8 @@ Route::group(['middleware' => ['auth']], function() {
       Route::get('facturePaiement/{facturePaiement}/info','minInfo')->name("facturePaiement.minInfo");
       Route::get('facturePaiement/{id}/add','add')->name("facturePaiement.add");
     });
-   
- 
+
+
     Route::resource("stock",StockController::class)->except(["create"]);
     Route::controller(StockController::class)->group(function(){
       Route::get('/reference-stock','filterReference')->name("stock.reference");

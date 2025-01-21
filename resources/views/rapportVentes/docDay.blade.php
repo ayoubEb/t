@@ -8,14 +8,7 @@
   <title>liste des ventes : {{ $mois }}</title>
 </head>
 <body>
-  <header class="headerRapport">
-    <h4>
-      liste des ventes : {{ $mois }}
-    </h4>
-    <h6>
-      num : {{ $ligneRapport->num }}
-    </h6>
-  </header>
+  @include('layouts.heading_doc')
   <article class="headerInfo">
       <table>
         <thead>
@@ -74,5 +67,8 @@
       </tbody>
     </table>
   </article>
+  @if ($entreprise != null)
+  @include('layouts.footerDoc',["id"=>$entreprise->id])
+@endif
 </body>
 </html>
