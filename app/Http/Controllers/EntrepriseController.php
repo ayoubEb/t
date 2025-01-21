@@ -163,11 +163,11 @@ class EntrepriseController extends Controller
         Rule::unique('entreprises', 'rc')->ignore($entreprise->id),
       ],
       "patente"        => ["numeric","required"],
-      "cnss"           => ["numeric","required"],
+      "cnss"           => ["nullable","numeric"],
       "site"           => ["required"],
       "telephone"      => ["required"],
       "ville"          => ["required"],
-      "code_postal"    => ["regex:/^([0-9]){1,5}$/","required"],
+      "code_postal"    => ["numeric","nullable"],
       "email"          => ["required"],
     ]);
 

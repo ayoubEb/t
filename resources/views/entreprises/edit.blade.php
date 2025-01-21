@@ -111,7 +111,7 @@
 
         <div class="col mb-2">
           <div class="form-group">
-            <label for="" class="form-label">Site <span class="text-danger"> * </span></label>
+            <label for="" class="form-label">Site</label>
             <input type="text" name="site" id="" class="form-control @error('site') is-invalid @enderror" value="{{ $entreprise->site }}">
             @error('site')
               <strong class="invalid-feedback">{{ $message }}</strong>
@@ -121,7 +121,7 @@
 
         <div class="col mb-2">
           <div class="form-group">
-            <label for="" class="form-label">CNSS <span class="text-danger"> * </span></label>
+            <label for="" class="form-label">CNSS</label>
             <input type="text" name="cnss" id="" class="form-control @error('cnss') is-invalid @enderror" value="{{ $entreprise->cnss }}">
             @error('cnss')
               <strong class="invalid-feedback">{{ $message }}</strong>
@@ -151,7 +151,7 @@
 
         <div class="col mb-2">
           <div class="form-group">
-            <label for="" class="form-label">Code postal <span class="text-danger"> * </span></label>
+            <label for="" class="form-label">Code postal</label>
             <input type="text" name="code_postal" id="" class="form-control @error('code_postal') is-invalid @enderror" value="{{ $entreprise->code_postal }}">
             @error('code_postal')
               <strong class="invalid-feedback">{{ $message }}</strong>
@@ -159,6 +159,16 @@
           </div>
         </div>
 
+        <div class="col mb-2">
+          <div class="form-group">
+            <label for="" class="form-label">Document<span class="text-danger"> * </span></label>
+            <select name="check_document" id="" class="form-select">
+              <option value="">-- Sélectionner --</option>
+              <option value="1" {{ $entreprise->check_document == 1 ? 'selected' : '' }}>Active</option>
+              <option value="0" {{ $entreprise->check_document == 0 ? 'selected' : '' }}>Inactive</option>
+            </select>
+          </div>
+        </div>
         <div class="col-8">
           <div class="form-group">
             <label for="" class="form-label">description</label>

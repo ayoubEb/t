@@ -16,7 +16,7 @@
               document
             </a>
             <a href="{{ route('rapportClient.documentDay',$ligneRapport->mois) }}" class="btn btn-doc waves-effect waves-light mb-1 me-2">
-              document jour
+              journaliste
             </a>
             <a href="{{ route('rapportClient.exportClient',$ligneRapport->mois) }}" class="btn btn-doc waves-effect waves-light mb-1">
               excel

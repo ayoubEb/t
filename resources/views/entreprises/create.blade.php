@@ -102,7 +102,7 @@ Ajouter une entreprise
 
         <div class="col mb-2">
           <div class="form-group">
-            <label for="" class="form-label">Site <span class="text-danger"> * </span></label>
+            <label for="" class="form-label">Site</label>
             <input type="text" name="site" id="" class="form-control @error('site') is-invalid @enderror" value="{{ old('site') }}">
             @error('site')
               <strong class="invalid-feedback">{{ $message }}</strong>
@@ -112,7 +112,7 @@ Ajouter une entreprise
 
         <div class="col mb-2">
           <div class="form-group">
-            <label for="" class="form-label">CNSS <span class="text-danger"> * </span></label>
+            <label for="" class="form-label">CNSS</label>
             <input type="text" name="cnss" id="" class="form-control @error('cnss') is-invalid @enderror" value="{{ old('cnss') }}">
             @error('cnss')
               <strong class="invalid-feedback">{{ $message }}</strong>

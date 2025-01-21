@@ -16,7 +16,7 @@ $check = "achats";
               document
             </a>
             <a href="{{ route('rapportAchat.documentDay',$ligneRapport->mois) }}" class="btn btn-doc waves-effect waves-light mb-1 me-2">
-              document jour
+              journaliste
             </a>
             <a href="{{ route('rapportAchat.exportAchat',$ligneRapport->mois) }}" class="btn btn-doc waves-effect waves-light mb-1">
               excel
