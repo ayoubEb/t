@@ -1,0 +1,309 @@
+* {
+  letter-spacing: 0.5px;
+}
+
+td {
+  font-size: small;
+}
+td span.mt {
+  font-size: 12.5px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.lien-doc {
+  font-size: 12px;
+}
+
+h5.title {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #00A5CF;
+  padding-bottom: 0.3rem;
+  font-size: 13px;
+}
+
+h4.title {
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px;
+  position: relative;
+  color: #004E64;
+  font-size: 14px;
+  margin: 0 0 0.25rem 0;
+}
+
+.plan td {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: smaller;
+  color: black !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+
+#add-commande #infoPro {
+  display: none;
+}
+#add-commande #basic-info {
+  display: none;
+}
+#add-commande .loading span {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+}
+
+#list-depots {
+  display: none;
+}
+#list-depots .loading span {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+table.info tbody tr td:nth-child(1) {
+  background-color: rgba(0, 78, 100, 0.1);
+}
+table.info td {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: smaller;
+  color: black !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+table.info tr td:first-child {
+  font-weight: 700;
+}
+
+.bg-vert-light {
+  background: #7AE582;
+}
+
+#cheque {
+  display: none;
+}
+
+.pagination {
+  margin: 0 !important;
+}
+.pagination li {
+  line-height: 20px;
+}
+.pagination li a {
+  font-size: 13px;
+  padding: 6px 10px;
+}
+.pagination li.active > .page-link {
+  padding: 6px 10px;
+  font-size: 13px !important;
+}
+
+.select2-container--default .select2-selection--single {
+  height: 2.15rem !important;
+}
+
+.select2-container--default .select2-selection--single {
+  padding-top: 3px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 3px !important;
+}
+
+td.subTitle {
+  background-color: #25A18E !important;
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+td.subTitle span {
+  color: white;
+}
+
+input {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+}
+
+.p-icon {
+  padding: 0.1rem 0.4rem;
+}
+
+.btn-customize, .btn-doc, .btn-bleu, .btn-retour, .btn-action, .btn-lien, .btn-header, .btn-noBack {
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+  font-size: 11px;
+}
+
+.btn-noBack {
+  color: #004E64 !important;
+  border: 0 !important;
+}
+
+.btn-header {
+  color: white !important;
+  border: 2px #00A5CF solid !important;
+  background: #00A5CF !important;
+}
+
+.btn-lien {
+  color: white !important;
+  border: 0 !important;
+  background: #00A5CF !important;
+}
+
+.btn-action {
+  color: white !important;
+  border: 2px #25A18E solid !important;
+  background: #25A18E !important;
+}
+
+.btn-retour {
+  color: #25A18E;
+  border: 2px #25A18E solid !important;
+  background-color: white;
+}
+.btn-retour:hover {
+  color: white;
+  background: #25A18E !important;
+}
+
+.btn-bleu {
+  background: #004E64 !important;
+  color: white !important;
+  border: 2px #004E64 solid !important;
+}
+
+.btn-doc {
+  background: #004E64 !important;
+  color: white !important;
+  border: 0 !important;
+}
+.btn-doc .mdi {
+  font-size: 0.5px12px !important;
+}
+
+.form-group label {
+  text-transform: uppercase;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.headerLinks h6 {
+  border: 3px solid #25A18E;
+  border-radius: 0.375rem;
+  padding: 11px 0;
+  text-transform: uppercase;
+  background-color: white;
+}
+.headerLinks ul {
+  background-color: #00A5CF;
+  padding: 10px 0;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.headerLinks ul li a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  font-weight: 500;
+  font-size: 11px;
+}
+.headerLinks ul li a.active {
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+}
+
+.table-customize thead {
+  background: #00A5CF;
+}
+.table-customize thead th {
+  color: white;
+}
+.table-customize th, .table-customize td {
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+}
+
+.p-icon {
+  padding-top: 0.15rem 0.3rem;
+}
+
+#side-menu > li > a {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12.5px !important;
+  letter-spacing: 0.9px;
+}
+
+.sub-menu {
+  text-transform: capitalize;
+}
+
+h6.sub-title {
+  text-transform: uppercase;
+}
+
+.page-title {
+  font-size: 17px;
+}
+
+li.list-group-item {
+  letter-spacing: 0.08rem;
+}
+
+ul.customize li.list-group-item, div.customize li.list-group-item {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  border-radius: 0.375rem !important;
+  -webkit-border-radius: 0.375rem !important;
+  -moz-border-radius: 0.375rem !important;
+  -ms-border-radius: 0.375rem !important;
+  -o-border-radius: 0.375rem !important;
+}

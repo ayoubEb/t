@@ -1,0 +1,83 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import 'variables';
+
+*{
+  margin: 1%;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: .5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+table
+{
+  width          : 100%;
+  border-collapse: collapse;
+  margin: 0;
+
+
+
+  th,td{
+    padding-top   : 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    text-transform: uppercase;
+    font-size: 9px;
+
+  }
+
+  tr{
+    border: .4px $color-bleu solid;
+  }
+}
+
+.infoClient{
+  tbody{
+    tr td:first-child(){
+      font-weight: bold;
+      border-right: 1px solid $color-bleu-50;
+    }
+  }
+}
+
+.cmd,.paiements{
+  th{
+    background-color: $color-bleu-50;
+    text-align: left;
+    color: white;
+
+  }
+  td{
+    font-weight: normal !important;
+  }
+}
+
+
+
+.text-start{
+  text-align: left;
+}
+.text-end{
+  text-align: right;
+}
+
+
+h6.title{
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-bleu;
+  margin: 15px 0;
+}
+
+footer
+{
+
+  margin: 8px 0 0 0;
+}
+
+.cmd
+{
+  margin: 8px 0 0 0;
+}

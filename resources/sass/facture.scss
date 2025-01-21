@@ -1,0 +1,246 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import 'variables';
+
+*{
+  margin: 1.5%;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: .5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+  margin        : 0 auto;
+  color         : $color-bleu;
+  text-transform: uppercase;
+  border-bottom : 2px $color-bleu solid;
+  width: 30%;
+  h5
+  {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: auto;
+    font-size: x-small;
+
+  }
+}
+
+.sub-header
+{
+  margin: 20px 0;
+  width: 100%;
+  .infoClient,.minEntreprise{
+    width: 45%;
+    margin: 0;
+    ul{
+      list-style-type: none;
+      li
+      {
+        margin: 0 0 10px 0;
+        font-size: 13px;
+        span:first-child(){
+          font-size: 11px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .infoClient{
+    float: left;
+    border: 1px solid black;
+    border-radius: .375rem;
+    margin-bottom: 15px;
+  }
+  .minEntreprise{
+    float: right ;
+    li{
+      padding-left: 5rem;
+    }
+  }
+}
+table
+{
+  width          : 100%;
+  border-collapse: collapse;
+  margin: 0;
+
+  thead
+  {
+    background: $color-bleu;
+    th
+    {
+      font-size: xx-small;
+      color: white;
+      // text-align: left;
+      margin: 7px;
+    }
+  }
+  tbody{
+    td{
+      font-size: 9px;
+    }
+  }
+  th,td{
+    padding-top   : 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    text-align: left;
+    text-transform: uppercase;
+
+
+  }
+  tr{
+
+    border: .4px $color-bleu solid;
+  }
+}
+
+
+.rowsNull{
+  border: 0;
+}
+
+
+
+
+.livraison{
+  margin: 15px 0 !important;
+  width: 100%;
+  clear: both;
+}
+
+
+.produits{
+  clear: both;
+  margin: 0 !important;
+  tfoot{
+      tr{
+        border:0;
+      }
+
+    /* font-size: xx-small ; */
+
+    tr:first-child() th{
+      padding-left: 5px;
+      text-align: left;
+    }
+
+    h6
+    {
+      font-weight: normal;
+      line-height: 20px;
+      text-align: center;
+      span{
+       color: $color-vert;
+     }
+
+    }
+    tr:nth-child(1) th:nth-child(1n+2),
+    tr:nth-child(2) th,
+    tr:nth-child(3) th,
+    tr:nth-child(4) th,
+    tr:nth-child(5) th{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: x-small ;
+      padding: 8px 0px;
+    }
+
+    tr:nth-child(1) th:nth-child(2),
+    tr:nth-child(2) th:nth-child(1),
+    tr:nth-child(3) th:nth-child(1),
+    tr:nth-child(4) th:nth-child(1),
+    tr:nth-child(5) th:nth-child(1){
+      background-color: $color-bleu-50;
+      color: white;
+    }
+
+
+  }
+}
+.produitsMin{
+  clear: both;
+  margin: 0;
+  padding: 0 !important;
+  border-left: 2px solid $color-bleu;
+  border-right: 2px solid $color-bleu;
+  border-bottom: 2px solid $color-bleu;
+  // border-left: 2px solid $color-bleu;
+  table{
+    height: 20rem;
+
+  }
+  th{
+    border-top: 2px solid $color-bleu;
+    border-bottom: 2px solid $color-bleu;
+  }
+  td:nth-child(1),
+  td:nth-child(2),
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5){
+    border-right: 1px solid $color-bleu;
+  }
+  tr{
+  border: 0 !important;
+  }
+}
+
+footer
+{
+  width: 100%;
+  margin: 10px 0 0 0;
+  h5{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: x-small;
+    margin-bottom:0;
+  }
+
+  ul{
+    margin: 0;
+    list-style-type: none;
+    li{
+      padding-bottom: 2px;
+      font-size: 11px;
+      padding: 0;
+      span{
+        font-weight: bold;
+        margin: 0;
+        text-transform: capitalize;
+      }
+      &:last-child(){
+        padding: 0px !important;
+      }
+    }
+  }
+  #partBas{
+    width: 50%;
+    float: left;
+  }
+  #partCordonne{
+    width: 50%;
+    float: left;
+  }
+  hr{
+    margin: 10px 0;
+    height: 0px;
+    border: 1.5px solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  h6{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .9px;
+  }
+  hr,h6{
+    clear: both;
+  }
+}
+.devis
+{
+  margin: 8px 0 0 0;
+}

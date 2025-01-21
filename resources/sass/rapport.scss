@@ -1,0 +1,74 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import 'variables';
+@import 'all_doc.scss';
+
+
+
+
+// .infoResume{
+//   margin: 0 0 10px 0;
+//   tbody{
+//     tr td:first-child(){
+//       background-color: rgba($color: $color-bleu, $alpha: .1);
+//       border-right: 1px solid $color-bleu-50;
+//     }
+//   }
+// }
+// .headerRapport{
+//   margin: 0 0 10px 0;
+//   h5{
+//     width         : 50%;
+//     padding-top   : 10px;
+//     padding-bottom: 10px;
+//     text-align    : center;
+//     // border-radius : .375rem;
+//     font-size: x-small;
+//     text-transform: uppercase;
+//     margin: auto;
+//   }
+//   // h4{
+//   //   float         : left;
+//   //   background    : $color-vert-50;
+//   // }
+//   // h6{
+//   //   float: right;
+//   //   background    : $color-vert;
+//   //   color: white;
+
+//   // }
+// }
+.cmd,.paiements,.statistiques{
+  margin: 0;
+  clear: both;
+
+  td{
+    font-weight: normal !important;
+  }
+}
+
+
+th,td{
+ padding-top: 7px;
+ padding-bottom: 7px;
+
+}
+footer
+{
+
+  margin: 8px 0 0 0;
+}
+
+.cmd
+{
+  margin: 8px 0 0 0;
+}
+
+.infoClient{
+  tbody{
+    tr td:nth-child(1)
+    {
+      background-color: rgba($color: $color-vert, $alpha: .2);
+      border-right: 1px solid $color-bleu;
+    }
+  }
+}

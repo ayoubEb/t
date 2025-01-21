@@ -1,0 +1,150 @@
+* {
+  margin: 1.5%;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+header .logo {
+  width: 50%;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+header .logo img {
+  width: 250px !important;
+}
+header p {
+  padding: 0;
+  font-size: 13px;
+}
+header p span {
+  margin: 0;
+}
+header .min-info {
+  width: 45%;
+  float: right;
+}
+header .min-info ul {
+  list-style-type: none;
+}
+header .min-info ul li {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+}
+header .min-info ul li span:first-child() {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .min-info .client {
+  width: 100M;
+  margin: 0;
+  border-radius: 0.375rem;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+header .min-info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+header .min-info table tbody td {
+  font-size: 9px;
+}
+header .min-info table td {
+  padding: 7px 3px;
+  text-transform: uppercase;
+  text-align: left;
+  border: 0.4px #004E64 solid;
+}
+
+.produits, article {
+  clear: both;
+  margin: 0 !important;
+  border: 0.4px #004E64 solid;
+}
+.produits table, article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+.produits table tr, article table tr {
+  border: 0;
+}
+.produits table thead, article table thead {
+  background: #004E64;
+}
+.produits table thead th, article table thead th {
+  font-size: xx-small;
+  color: white;
+}
+.produits table tbody td, article table tbody td {
+  font-size: 9px;
+}
+.produits table th, article table th {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.produits table td, article table td {
+  line-height: 25px;
+}
+.produits table th, .produits table td, article table th, article table td {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.resume {
+  clear: both;
+  margin: 15px 0 !important;
+}
+.resume table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+.resume table th, .resume table td {
+  font-size: 10.5px;
+  border: 0.4px #004E64 solid;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+hr {
+  margin: 10px 0;
+  background-color: black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  left: 0%;
+  width: 100%;
+}
+footer .fw-bold {
+  font-weight: bolder;
+}
+footer p {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 18px;
+}
+footer p span {
+  margin: 0;
+}
+
+article {
+  margin: 15px 0 !important;
+  width: 100%;
+  clear: both;
+}

@@ -1,0 +1,66 @@
+@import "variables.scss";
+
+*{
+  margin: 1%;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: .5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+  margin: 0 0 10px 0;
+  h5{
+    color         : $color-bleu;
+    text-transform: uppercase;
+    width: 40%;
+    font-size     : 12px;
+    text-align    : center;
+    // border-top    : 2px solid $color-bleu;
+    border-bottom : 2px solid $color-bleu;
+    padding-bottom: 5px;
+    margin: auto;
+  }
+}
+table
+{
+  width          : 100%;
+  border-collapse: collapse;
+  margin: 0;
+
+
+  th{
+    background-color: $color-bleu-50;
+    text-align: left;
+    color: white;
+
+  }
+  th,td{
+    padding-left: 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+
+  }
+
+  tr{
+    border: .4px $color-bleu solid;
+  }
+}
+
+article{
+  clear: both;
+  margin: 0;
+}
+
+.sub-title
+{
+  // text-align    : center;
+  text-transform: uppercase;
+  font-weight   : bold;
+  letter-spacing: .8px;
+  font-size     : 13px;
+  margin: 18px 0px 9px 0px;
+
+}
+
+
+

@@ -1,0 +1,215 @@
+* {
+  margin: 1.5%;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  color: #004E64;
+  text-transform: uppercase;
+  border-bottom: 2px #004E64 solid;
+  width: 30%;
+}
+header h5 {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: auto;
+  font-size: x-small;
+}
+
+.sub-header {
+  margin: 20px 0;
+  width: 100%;
+}
+.sub-header .infoClient, .sub-header .minEntreprise {
+  width: 45%;
+  margin: 0;
+}
+.sub-header .infoClient ul, .sub-header .minEntreprise ul {
+  list-style-type: none;
+}
+.sub-header .infoClient ul li, .sub-header .minEntreprise ul li {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+}
+.sub-header .infoClient ul li span:first-child(), .sub-header .minEntreprise ul li span:first-child() {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.sub-header .infoClient {
+  float: left;
+  border: 1px solid black;
+  border-radius: 0.375rem;
+  margin-bottom: 15px;
+}
+.sub-header .minEntreprise {
+  float: right;
+}
+.sub-header .minEntreprise li {
+  padding-left: 5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+table thead {
+  background: #004E64;
+}
+table thead th {
+  font-size: xx-small;
+  color: white;
+  margin: 7px;
+}
+table tbody td {
+  font-size: 9px;
+}
+table th, table td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  text-align: left;
+  text-transform: uppercase;
+}
+table tr {
+  border: 0.4px #004E64 solid;
+}
+
+.rowsNull {
+  border: 0;
+}
+
+.livraison {
+  margin: 15px 0 !important;
+  width: 100%;
+  clear: both;
+}
+
+.produits {
+  clear: both;
+  margin: 0 !important;
+}
+.produits tfoot {
+  /* font-size: xx-small ; */
+}
+.produits tfoot tr {
+  border: 0;
+}
+.produits tfoot tr:first-child() th {
+  padding-left: 5px;
+  text-align: left;
+}
+.produits tfoot h6 {
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+}
+.produits tfoot h6 span {
+  color: #25A18E;
+}
+.produits tfoot tr:nth-child(1) th:nth-child(1n+2),
+.produits tfoot tr:nth-child(2) th,
+.produits tfoot tr:nth-child(3) th,
+.produits tfoot tr:nth-child(4) th,
+.produits tfoot tr:nth-child(5) th {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: x-small;
+  padding: 8px 0px;
+}
+.produits tfoot tr:nth-child(1) th:nth-child(2),
+.produits tfoot tr:nth-child(2) th:nth-child(1),
+.produits tfoot tr:nth-child(3) th:nth-child(1),
+.produits tfoot tr:nth-child(4) th:nth-child(1),
+.produits tfoot tr:nth-child(5) th:nth-child(1) {
+  background-color: #00A5CF;
+  color: white;
+}
+
+.produitsMin {
+  clear: both;
+  margin: 0;
+  padding: 0 !important;
+  border-left: 2px solid #004E64;
+  border-right: 2px solid #004E64;
+  border-bottom: 2px solid #004E64;
+}
+.produitsMin table {
+  height: 20rem;
+}
+.produitsMin th {
+  border-top: 2px solid #004E64;
+  border-bottom: 2px solid #004E64;
+}
+.produitsMin td:nth-child(1),
+.produitsMin td:nth-child(2),
+.produitsMin td:nth-child(3),
+.produitsMin td:nth-child(4),
+.produitsMin td:nth-child(5) {
+  border-right: 1px solid #004E64;
+}
+.produitsMin tr {
+  border: 0 !important;
+}
+
+footer {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+footer h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: x-small;
+  margin-bottom: 0;
+}
+footer ul {
+  margin: 0;
+  list-style-type: none;
+}
+footer ul li {
+  padding-bottom: 2px;
+  font-size: 11px;
+  padding: 0;
+}
+footer ul li span {
+  font-weight: bold;
+  margin: 0;
+  text-transform: capitalize;
+}
+footer ul li:last-child() {
+  padding: 0px !important;
+}
+footer #partBas {
+  width: 50%;
+  float: left;
+}
+footer #partCordonne {
+  width: 50%;
+  float: left;
+}
+footer hr {
+  margin: 10px 0;
+  height: 0px;
+  border: 1.5px solid;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+footer h6 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.9px;
+}
+footer hr, footer h6 {
+  clear: both;
+}
+
+.devis {
+  margin: 8px 0 0 0;
+}

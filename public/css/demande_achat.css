@@ -1,0 +1,185 @@
+* {
+  margin: 1.5%;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  color: #004E64;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  width: 50%;
+  border-bottom: 2px #004E64 solid;
+}
+
+.sub-header {
+  margin: 10px 0;
+  width: 100%;
+}
+.sub-header .user, .sub-header .entreprise {
+  width: 45%;
+  margin: 0;
+}
+.sub-header .user ul, .sub-header .entreprise ul {
+  list-style-type: none;
+}
+.sub-header .user ul li, .sub-header .entreprise ul li {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+}
+.sub-header .user ul li span:first-child(), .sub-header .entreprise ul li span:first-child() {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.sub-header .user {
+  float: left;
+  border-radius: 0.375rem;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+.sub-header .entreprise {
+  float: right;
+  border-radius: 0.375rem;
+}
+.sub-header .entreprise ul {
+  border: 1px solid black;
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 0.375rem;
+}
+.sub-header .entreprise ul li {
+  margin: 0 0 6px 0;
+  font-size: 13px;
+}
+.sub-header .entreprise ul li span:first-child() {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.sub-header .entreprise ul li.last {
+  margin: 0;
+}
+.sub-header .entreprise .min {
+  border: 1px solid #004E64;
+  border-radius: 0.375rem;
+}
+.sub-header .entreprise .min table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+.sub-header .entreprise .min table th:nth-child(1), .sub-header .entreprise .min table td:nth-child(1) {
+  border-right: 0.4px #004E64 solid;
+}
+.sub-header .entreprise .min table thead tr {
+  border-bottom: 0.4px #004E64 solid;
+}
+.sub-header .entreprise .min table th, .sub-header .entreprise .min table td {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.pro {
+  height: 20rem;
+}
+
+.produits {
+  clear: both;
+  margin: 0 !important;
+  border: 0.4px #004E64 solid;
+}
+.produits table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+.produits table tr {
+  border: 0;
+}
+.produits table thead {
+  background: #004E64;
+}
+.produits table thead th {
+  font-size: xx-small;
+  color: white;
+  margin: 7px;
+}
+.produits table tbody td {
+  font-size: 9px;
+}
+.produits table th, .produits table td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.resume {
+  clear: both;
+  margin: 15px 0 !important;
+}
+.resume table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+.resume table th, .resume table td {
+  font-size: 10.5px;
+  border: 0.4px #004E64 solid;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+hr {
+  margin: 10px 0;
+  background-color: black;
+}
+
+footer {
+  margin: 0;
+}
+footer .fw-bold {
+  font-weight: bolder;
+}
+footer p {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 18px;
+}
+footer p span {
+  margin: 0;
+}
+
+.rowsNull {
+  border: 0 !important;
+}
+
+.text-start {
+  text-align: left;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.cmd {
+  margin: 8px 0 0 0;
+}

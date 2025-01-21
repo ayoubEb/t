@@ -1,0 +1,93 @@
+@import "all_doc.scss";
+
+
+  .topPage{
+    width: 100%;
+    margin: 0 0 10x 0;
+    .client , .facture
+    {
+      width: 40%;
+      margin: 10px 0;
+    }
+    .client
+    {
+      float: left;
+
+    }
+    .facture{
+
+      float: right;
+    }
+  }
+  .title
+  {
+    font-size     : 12.5px;
+    width         : 40%;
+    text-align    : center;
+    text-transform: uppercase;
+    color         : $color-bleu;
+    margin        : auto;
+    border        : 1.5px solid $color-bleu;
+    padding       : 8px 0px;
+    border-radius : .375rem;
+    clear         : both;
+
+  }
+
+  tbody{
+    td{
+      text-align: left !important;
+      padding-top   : 8px;
+      padding-bottom: 8px;
+    }
+    tr td:first-child(){
+      background-color: rgba($color: $color-bleu, $alpha: .1);
+      border-right: 1px solid $color-bleu-50;
+      width: 50%;
+    }
+  }
+
+
+
+
+
+  .infoCheque{
+    width: 100%;
+    margin: 0;
+    div{
+      width: 40%;
+      margin: 10px 0;
+    }
+    div:nth-child(1)
+    {
+      float: left;
+    }
+    div:nth-child(2)
+    {
+      float: right;
+    }
+  }
+
+
+  hr
+  {
+    margin: 10px 0;
+    background-color: black;
+  }
+footer
+{
+  margin: 0;
+  .fw-bold{
+    font-weight: bolder;
+  }
+  p{
+    margin: 0;
+    font-size: 11px;
+    letter-spacing: .5px;
+    text-align: center;
+    line-height: 18px;
+    span{
+      margin: 0;
+    }
+  }
+}

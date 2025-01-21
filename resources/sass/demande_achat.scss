@@ -1,0 +1,28 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import 'variables';
+@import 'buy_sell.scss';
+.rowsNull
+{
+  border: 0 !important;
+}
+
+.text-start{
+  text-align: left;
+}
+.text-end{
+  text-align: right;
+}
+
+
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.cmd
+{
+  // td{
+  //   font-size: 15px;
+  // }
+  margin: 8px 0 0 0;
+}

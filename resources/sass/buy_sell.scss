@@ -1,0 +1,182 @@
+@import 'variables';
+// @import 'top_document.scss';
+// @import 'bottom_document.scss';
+*{
+  margin: 1.5%;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: .5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  .logo{
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    img
+    {
+      width: 250px !important;
+    }
+  }
+  p{
+
+    padding: 0;
+    font-size: 13px;
+    span{
+      margin: 0;
+    }
+  }
+  .min-info
+  {
+    width: 45%;
+
+    float: right;
+    ul{
+      list-style-type: none;
+      li
+      {
+        margin: 0 0 10px 0;
+        font-size: 13px;
+        span:first-child(){
+          font-size: 11px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .client{
+      width: 100M;
+      margin: 0;
+      border-radius: .375rem;
+      margin-bottom: 15px;
+      border: 1px solid black;
+
+    }
+    table{
+      width          : 100%;
+      border-collapse: collapse;
+      tbody{
+        td{
+          font-size: 9px;
+        }
+      }
+      td{
+        padding  : 7px 3px;
+        text-transform: uppercase;
+        text-align: left;
+        border: .4px $color-bleu solid; ;
+
+      }
+    }
+  }
+}
+
+
+
+.produits , article{
+  clear: both;
+  margin: 0 !important;
+  border: .4px $color-bleu solid; ;
+  table
+  {
+    width          : 100%;
+    border-collapse: collapse;
+    margin: 0;
+
+    tr
+    {
+      border:0;
+    }
+    thead
+    {
+      background: $color-bleu;
+      th
+      {
+        font-size: xx-small;
+        color: white;
+        // margin: 7px;
+      }
+    }
+    tbody{
+      td{
+        font-size: 9px;
+      }
+    }
+    th{
+      padding-top   : 7px;
+      padding-bottom: 7px;
+    }
+    // padding-top   : 7px;
+    // padding-bottom: 7px;
+    td{
+      line-height: 25px;
+    }
+    th,td{
+
+      text-transform: uppercase;
+      text-align: center;
+
+    }
+  }
+}
+
+
+.resume{
+  clear: both;
+  margin: 15px 0 !important;
+  table
+  {
+    width          : 100%;
+    border-collapse: collapse;
+    margin: 0;
+    th,td{
+      font-size: 10.5px;
+      border: .4px $color-bleu solid;
+      padding-top   : 7px;
+      padding-bottom: 7px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+hr
+{
+  margin: 10px 0;
+  background-color: black;
+}
+footer
+{
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  left: 0%;
+  width: 100%;
+  .fw-bold{
+    font-weight: bolder;
+  }
+  p{
+    margin: 0;
+    font-size: 11px;
+    letter-spacing: .5px;
+    text-align: center;
+    line-height: 18px;
+    span{
+      margin: 0;
+    }
+  }
+}
+
+
+
+article{
+  margin: 15px 0 !important;
+  width: 100%;
+  clear: both;
+}
